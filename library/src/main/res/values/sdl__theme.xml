@@ -14,9 +14,10 @@
 		<item name="android:windowCloseOnTouchOutside">true</item>
 		<item name="android:backgroundDimAmount">0.6</item>
 		<item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@style/SDL.Animation</item>
 
-        <item name="sdlTitleTextStyle">@style/SDL.TextView.Title</item>
-        <item name="sdlMessageTextStyle">@style/SDL.TextView.Message</item>
+		<item name="sdlTitleTextStyle">@style/SDL.TextView.Title</item>
+		<item name="sdlMessageTextStyle">@style/SDL.TextView.Message</item>
 
 		<item name="sdlDialogStyle">@style/DialogStyleDark</item>
 	</style>
@@ -150,5 +151,10 @@
 		<item name="android:layout_marginTop">@dimen/grid_4</item>
 		<item name="android:layout_marginBottom">@dimen/grid_4</item>
 	</style>
+
+    <style name="SDL.Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
 
 </resources>
